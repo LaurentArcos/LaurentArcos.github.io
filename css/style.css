@@ -1,3 +1,76 @@
+body {
+    background-color: #101822;
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #1B2838;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid lightblue;
+    border-radius: 2%;
+}
+
+#nom {
+    font-size: 1.8em;
+}
 
 
+a {
+    color: inherit;
+}
+
+a:hover  {
+    color: blue;
+}
+
+#parcours-professionnel {
+    background: #1B2838;
+    border: 1px solid lightblue;
+    border-radius: 2%;
+    width: 50%;
+    padding-bottom: 1.5em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+#contacts {
+    background: #1B2838;
+    border: 1px solid lightblue;
+    border-radius: 2%;
+    width: 50%;
+    padding-bottom: 1.5em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jobs-précédents {
+    padding: 1em;
+}
+
+h2 {font-size: 1.5em;
+    padding: 1em;
+}
+
+h3 {
+    font-size: 1.1em;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+.poste-chez-esprit {
+    padding: 0.5em;
+    line-height: 1.3em;
+}
 
