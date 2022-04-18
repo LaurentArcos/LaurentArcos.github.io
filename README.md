@@ -1,6 +1,6 @@
 ## CV en ligne
 
-[Mon CV](https://laurentarcos.github.io/mon-cv/html/)
+[Consulter mon CV en ligne](https://laurentarcos.github.io/mon-cv/html/)
 
 ### Me joindre :
 
