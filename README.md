@@ -2,7 +2,7 @@
 
 [Consulter mon CV en ligne](https://laurentarcos.github.io/mon-cv/html/)
 
-### Me joindre :
+#### Me joindre :
 
 -<laurent.arcos@gmail.com>
 
