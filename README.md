@@ -1,8 +1,8 @@
-##Voici mon CV en ligne
+## Voici mon CV en ligne
 
 [Mon CV](https://laurentarcos.github.io/mon-cv/html/)
 
-###Me joindre :
+### Me joindre :
 
 -<laurent.arcos@gmail.com>
 
