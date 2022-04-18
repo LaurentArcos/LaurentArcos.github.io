@@ -5,7 +5,7 @@ Voici mon CV en ligne
 
 Me joindre :
 
--[Email](<laurent.arcos@gmail.com>)
+-<laurent.arcos@gmail.com>
 
 -[Linkedin](https://www.linkedin.com/in/laurentarcos) 
 
