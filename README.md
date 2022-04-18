@@ -1,4 +1,4 @@
-## CV en ligne
+## Laurent ARCOS
 
 [Consulter mon CV en ligne](https://laurentarcos.github.io/mon-cv/html/)
 
