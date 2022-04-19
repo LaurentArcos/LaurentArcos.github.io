@@ -1,10 +1,7 @@
 body {
     background-color: #101822;
     color: white;
-    width: 80%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 header {
@@ -14,10 +11,9 @@ header {
     padding: 1em;
     width: 20%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1.5em auto;
     border: 1px solid lightblue;
-    border-radius: 2%;
+    filter: drop-shadow(0 0 0.35em #4d709b);
 }
 
 #nom {
@@ -37,22 +33,24 @@ a:hover  {
     background: #1B2838;
     border: 1px solid lightblue;
     border-radius: 2%;
-    width: 50%;
+    width: 30%;
     padding-bottom: 1.5em;
-    margin: 1em;
+    margin: 1.5em;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(0 0 0.35em #4d709b);
 } 
 
 #contacts {
     background: #1B2838;
     border: 1px solid lightblue;
     border-radius: 2%;
-    width: 50%;
+    width: 30%;
     padding-bottom: 1.5em;
-    margin: 1em;
+    margin: 1.5em;
     margin-left: auto;
     margin-right: auto;
+    filter: drop-shadow(0 0 0.35em #4d709b);
 }
 
 .jobs-précédents {
@@ -74,3 +72,26 @@ h3 {
     line-height: 1.3em;
 }
 
+
+
+@media screen and (max-width: 900px) {
+    
+    header {
+        width: 50%;
+
+    }
+
+
+    #parcours-professionnel {
+        
+        width: 70%;
+
+    } 
+    
+    #contacts {
+
+        width: 70%;
+
+    }
+
+}
