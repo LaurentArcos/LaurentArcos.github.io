@@ -1,19 +1,27 @@
 body {
-    background-color: #101822;
-    color: white;
+    background-image: url(../images/photo-1571647520939-45c81309ba91.avif);
+    color: black;
     text-align: center;
 }
+div {
+    background-image: url(../images/photo-1603484477859-abe6a73f9366.avif);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;   
+    margin-bottom: 4em
+}
+
 
 header {
-    background-color: #1B2838;
+    ;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1em;
-    width: 20%;
     display: block;
     margin: 1.5em auto;
-    border: 1px solid lightblue;
-    filter: drop-shadow(0 0 0.35em #4d709b);
+    
+    
 }
 
 #nom {
@@ -30,27 +38,21 @@ a:hover  {
 }
 
 #parcours-professionnel {
-    background: #1B2838;
-    border: 1px solid lightblue;
-    border-radius: 2%;
-    width: 30%;
+    
     padding-bottom: 1.5em;
     margin: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    filter: drop-shadow(0 0 0.35em #4d709b);
+    
 } 
 
 #contacts {
-    background: #1B2838;
-    border: 1px solid lightblue;
-    border-radius: 2%;
-    width: 30%;
+    
     padding-bottom: 1.5em;
     margin: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    filter: drop-shadow(0 0 0.35em #4d709b);
+    
 }
 
 .jobs-précédents {
@@ -75,23 +77,9 @@ h3 {
 
 
 @media screen and (max-width: 900px) {
-    
-    header {
-        width: 50%;
 
-    }
-
-
-    #parcours-professionnel {
-        
+    div {
         width: 70%;
-
-    } 
-    
-    #contacts {
-
-        width: 70%;
-
     }
 
 }
