@@ -2,32 +2,31 @@ body {
     background-image: url(../images/photo-1571647520939-45c81309ba91.avif);
     color: black;
     text-align: center;
+    font-family: 'Courgette', cursive;
 }
-div {
+
+#feuille {
     background-image: url(../images/photo-1603484477859-abe6a73f9366.avif);
     width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4em;   
-    margin-bottom: 4em
+    margin-bottom: 4em;
+    box-shadow: 0px 0px 42px 6px black;
+    padding: 4em 2em;
 }
 
 
 header {
-    ;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 1em;
     display: block;
     margin: 1.5em auto;
-    
-    
 }
 
 #nom {
     font-size: 1.8em;
 }
-
 
 a {
     color: inherit;
@@ -39,16 +38,14 @@ a:hover  {
 
 #parcours-professionnel {
     
-    padding-bottom: 1.5em;
     margin: 1.5em;
     margin-left: auto;
     margin-right: auto;
-    
 } 
 
 #contacts {
     
-    padding-bottom: 1.5em;
+
     margin: 1.5em;
     margin-left: auto;
     margin-right: auto;
