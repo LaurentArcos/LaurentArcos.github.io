@@ -82,8 +82,10 @@ h3 {
 
 @media screen and (max-width: 900px) {
 
-    div {
+    #feuille {
         width: 70%;
     }
-
+    #photo {
+        width: 60%;
+    }
 }
