@@ -13,75 +13,131 @@
     </style>
 </head>
 
-<body>
+<body> <!--* Background / image de bureau -->
 
-   <div id="feuille">
-
-    <header>
-            <h1 id="nom">Laurent Arcos</h1>
-            <p id="date-de-naissance">né le 05/10/1985</p>
-    </header>
-
-        <div>
-            <img id="photo" src="../images/laurent-dessin3.png" alt="">
-        </div>
-
-
-    <section id="parcours-professionnel">
+    <div id="feuille">  <!--* Feuille du CV -->
         
-        <article class="jobs-précédents">
+        <header></header><!--! Mettre ici le bouton pour changer de thème -->
+       
+        <aside id="aside"> <!--* partie de gauche du CV -->
+            <section id="photo"> <!-- Photo de Profil --> </section>
+            <section id="infos">
+                <h2>Informations</h2><!-- infos -->
+                    <ul>       
+                        <li>Date de naissance: 05/10/1985</li>
+                        <li>Permis B</li>
+
+                    </ul>
+            </section> 
+            <section id="contacts">
+                <h2>Me contacter</h2><!-- coordonnées -->
+                    <ul>       
+                        <li>92bis avenue de la République<br>
+                            94700 Maisons-Alfort</li>
+                        <li>Téléphone: 0630205558</li>
+                        <li>Email: laurent.arcos@gmail.com</li>
+                        <li><a href="https://github.com/LaurentArcos" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/laurentarcos/" target="_blank">Linkedin</a></li>
+                        <li><a href="https://twitter.com/LaurentArcos" target="_blank">Twitter</a></li>
+                    </ul>
+            </section>    
+            <section id="competences-dev"> <!-- compétences de web développeur -->
+                <h2>Compétences en Développement Web</h2>
+                    <ul>
+                        <li>HTML, CSS, PHP, Javascript, React</li>
+                        <li>VS Code, GitHub</li>
+                        <li>Notion, Start.me, Stack Overflow</li>
+                        <li>Windows, MacOS, Linux(Ubuntu)</li>
+                        <li>Pack Office Microsoft</li>
+                        <li>Photoshop</li>
+                    </ul>
+            </section>
+            <section id="competences-complementaires"> <!-- compétences complémentaires -->
+                <h2>Compétences complémentaires</h2>
+                    <ul>
+                        <li>langues parlées: anglais (courant) et espagnol (bon niveau)</li>
+                        <li>Maîtrise des techniques commerciales</li>
+                    </ul>
+            </section>
+            <section id="Soft skills"> <!-- Soft skills -->
+                <h2>Soft Skills</h2>
+                    <ul>
+                        <li>Profil polyvalent</li>  
+                        <li>Curiosité, adaptabilité et réactivité</li>  
+                        <li>Capacité à travailler en équipe et en autonomie </li>
+                        <li>compétences organisationnelles, gestion du stress et des deadlines</li>  
+                        <li>Rigueur et Force de proposition</li>        
+                    </ul>
+            </section>
+        </aside>
+
+        <main id="droite-du-cv"> <!--* partie de droite du CV -->
+            <section id="nom-et-job"> <!-- Nom et infos -->
+            <h1 id="nom">Laurent Arcos</h1> <!-- Nom / Plus gros titre -->
+                <ul id="job">
+                    <li>Développeur Web</li>
+                </ul>
+            </section>
+            <section id="projet"> <!-- Mon projet -->
+                <h2>Mon Projet de reconversion</h2> 
+                    <p>Décider à 35 ans de changer de métier, pour certains c'est une preuve de courage, pour d'autre de folie.</p>
+                    <p>En ce qui me concerne c'est un sacré défi à relever mais surtout un rêve à réaliser.</p>
+                    <p>J'ai longtemps regardé le métier de développeur web avec envie mais sans imaginer une possible reconversion.</p>
+                    <p>Aujourd'hui, après plus d'un an de préparation et 6 mois de formation intensive chez O'Clock, je me sens plus prêt que jamais.</p>
+            </section>  
+            <section id="oclock"> <!-- O'clock -->
+                <h2>Formation chez O'clock</h2> 
+                    <p>Promo De Vinci de mars à septembre 2022</p>
+                    <p>Formation Développeur Web de 6 mois</p>
+                    <p>Consultez <a href="https://oclock.io/formations/developpeur-web" target="_blank">ici</a> le programme de la formation "Développeur Web" </p>
+            </section>
+            <section id="parcours-professionnel"> <!-- Expériences professionnelles -->
+                <h2 id="avant-oclock"> Mon parcours</h2>  <!-- Avant -->
+                    <article id="esprit"> <!-- Esprit-->
+                        <h3 class="parcours">Esprit</h3>
+                        <p class="poste">Commercial Prêt-à-Porter auprès des revendeurs multimarques <br>
+                        juil. 2018 - déc. 2021</p>
+                        <p class="poste">Commercial Bodywear auprès des revendeurs franchisés et multimarques<br>
+                        avr. 2017 - juil. 2018</p>
+                        <p class="poste">Assistant Commercial et Logistique<br>
+                        juin 2012 - avr. 2017</p>
+                    </article>
+                    <article id="dermeo"> <!-- Dermeo -->
+                        <h3 class="parcours">Dermeo</h3>
+                        <p class="poste">Office Manager - Chargé d'opération et de gestion<br>
+                        févr. 2011 - mai 2012 ·</p>
+                    </article>
+                    <article id="criom"> <!-- CRIOM -->
+                        <h3 class="parcours">criom</h3>
+                        <p class="poste">Assistant commercial export<br>
+                        mars 2008 - janv. 2011·</p>
+                    </article>
+                    <article id="iee"> <!-- IEE Paris 8 -->
+                        <h3 class="parcours">IEE Paris 8</h3>
+                        <p>2008<br>
+                        Licence Professionnelle Commerce International : Adjoint de Responsable Export</p>
+                    </article>
+                    <article id="lea"> <!-- LEA Toulon-->
+                        <h3 class="parcours">Université de Sud Toulon-Var</h3>
+                        <p>2006<br>
+                        Licence Langues Etrangères Appliquées (anglais et espagnol)</p>
+                    </article>
+            </section>
             
-            <h2>Avant O'Clock</h2>
+            <section id="centres-dinterets"> <!-- Centres d'intérêts -->
+                <h2>Centres d'intérêts</h2>
+                    <ul>
+                        <li>Histoire</li>
+                        <li>Cinéma</li>
+                        <li>Voyages (Afrique du Sud, Canada, Cambodge, Tanzanie, Vietnam)</li>
+                        <li>Jeux vidéos</li>
+                        <li>Jeux de rôles</li>
+                        <li>Podcasts</li>
+                    </ul>   
+            </section>
+        </main>
 
-                <h3>Esprit</h3>
-
-                    <p class="poste-chez-esprit">Commercial Prêt-à-Porter Multimarques <br>
-                    juil. 2018 - déc. 2021<br></p>
-
-                    <p class="poste-chez-esprit">Commercial Bodywear Franchisés et Multimarques<br>
-                    avr. 2017 - juil. 2018<br></p>
-
-                    <p class="poste-chez-esprit">Assistant Commercial et Logistique<br>
-                    juin 2012 - avr. 2017<br></p>
-
-        </article>
-
-        <article class="jobs-précédents">
-
-                <h3>Dermeo</h3>
-
-                    <p>Office Manager - Chargé d'opération et de gestion<br>
-                    févr. 2011 - mai 2012 ·</p>
-
-        </article>
-        
-        <article class="jobs-précédents">
-
-                <h3>criom</h3>
-            
-                    <p>Assistant commercial export<br>
-                    mars 2008 - janv. 2011·</p>
-
-        </article>
-
-    </section>
-
-    <aside id="contacts">
-        <h2>Contacts</h2>
-        <!--Ajouter les icônes-->
-        <ul>
-            <li>Téléphone: 0630205558</li>
-            <li>Email: laurent.arcos@gmail.com</li>
-            <li></li>
-            <li></li>
-            <li><a href="https://www.linkedin.com/in/laurentarcos/" target="_blank">Linkedin</a><br></li>
-            <li><a href="https://twitter.com/LaurentArcos" target="_blank">Twitter</a></li>
-
-        </ul>
-
-
-    </aside>
-</div>
+    </div>
 
 </body>
 
