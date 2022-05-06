@@ -34,7 +34,7 @@ section {
 #aside {
     background-color: white;
     height: inherit;
-    width: calc(100%/3);
+    width: 45%;
     color: #2F403C;
     padding: 1em;
 }
@@ -47,10 +47,15 @@ section {
     background-size: contain;
     width: 170px;   
     height: 170px;
-    border: 4px solid yellow;
+    border: 4px solid gold;
     border-radius: 100%;
-    margin: 1em auto 2em auto;
+    margin: 1em auto 1.5em auto;
 }   
+
+#photo:hover {
+    transition: 1.5s;
+    transform: rotate(360deg);
+}
 
 #photo-dessin {
     display: none;
@@ -62,8 +67,8 @@ section {
     padding-bottom: 0.5em;
 }
 
-#aside a:hover  {
-    color: rgb(155, 182, 0);
+#aside .lien-reseaux-sociaux:hover  {
+    color: rgb(212, 181, 2);
 }
 
 #aside section {
@@ -84,7 +89,7 @@ section {
     font-weight: bold;
 }
 
-#age,#permis {
+#age {
     font-size: 1.2em;
 }
 
@@ -97,7 +102,7 @@ section {
 }
 
 #nom {
-    color: yellow;
+    color: gold;
     font-size: 2.5em;
     font-weight: bold;
     text-transform: uppercase;
@@ -112,22 +117,15 @@ section {
 #nom-et-job {
     padding-top: 2.5em;
     padding-bottom: 2.5em;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid gold;
 }
 
 main h2 {
-    color: yellow;
+    color: gold;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 1em;
-}
-
-main a{
-    text-decoration: underline;
-}
-main a:hover  {
-    color: yellow;
 }
 
 #projet {
@@ -145,8 +143,17 @@ main a:hover  {
     text-transform: uppercase;
 }
 
-#lien-oclock {
+main a:hover  {
+    color: gold;
+}
+
+
+#programme-formation-oclock {
     font-size: 0.9em;
+}
+
+#lien-oclock {
+    text-decoration: underline;
 }
 
 #criom,#dermeo,#iee,#lea {
@@ -200,46 +207,40 @@ main a:hover  {
 
 @media screen and (min-width: 901px) and (max-width: 1100px) {
     #feuille {
-        width: 80%;
+        width: 90%;
     }
     #photo {
         width: 120px;   
         height: 120px;
     }  
     #aside {
-        width: 55%;
+        width: 65%;
     }
 }
 
-@media screen and (min-width: 770px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
     #feuille {
-        width: 85%;
+        width: 97%;
     }
     #photo {
-        width: 100px;   
-        height: 100px;
+        width: 120px;   
+        height: 120px;
     }  
-}
-
-@media screen and (min-width: 721px) and (max-width: 769px) {
-    #feuille {
-        width: 90%;
+    #aside {
+        width: 100%;
     }
-    #photo {
-        width: 100px;   
-        height: 100px;
-    }  
+
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
     #feuille {
         width: 95%;
         display: flex;
         flex-direction: column;
     }
     #photo {
-        width: 80px;   
-        height: 80px;
+        width: 100px;   
+        height: 100px;
     }  
     #aside {
         width: initial
