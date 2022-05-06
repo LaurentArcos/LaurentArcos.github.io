@@ -25,10 +25,6 @@ a {
     text-decoration: inherit;
 }
 
-a:hover  {
-    color: yellow;
-}
-
 section {
     padding: 1em;
 }
@@ -64,6 +60,10 @@ section {
     font-weight: bold;
     font-size: 1.2em;
     padding-bottom: 0.5em;
+}
+
+#aside a:hover  {
+    color: rgb(155, 182, 0);
 }
 
 #aside section {
@@ -123,15 +123,30 @@ main h2 {
     padding-bottom: 1em;
 }
 
+main a{
+    text-decoration: underline;
+}
+main a:hover  {
+    color: yellow;
+}
+
 #projet {
     padding-top: 2em;
-    text-align: justify;
 }
 
 .parcours {
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 0.3em;
+}
+
+#formation-oclock{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#lien-oclock {
+    font-size: 0.9em;
 }
 
 #criom,#dermeo,#iee,#lea {
