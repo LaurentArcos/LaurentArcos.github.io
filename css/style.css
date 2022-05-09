@@ -45,21 +45,20 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 170px;   
-    height: 170px;
+    width: 180px;   
+    height: 180px;
     border: 4px solid gold;
     border-radius: 100%;
     margin: 1em auto 1.5em auto;
 }   
 
+
+
 #photo:hover {
     transition: 1.5s;
-    transform: rotate(360deg);
+    transform: rotateX(360deg);
 }
 
-#photo-dessin {
-    display: none;
-}
 
 #aside h2 {
     font-weight: bold;
@@ -240,8 +239,8 @@ main a:hover  {
         width: 90%;
     }
     #photo {
-        width: 120px;   
-        height: 120px;
+        width: 150px;   
+        height: 150px;
     }  
     #aside {
         width: 65%;
@@ -262,15 +261,46 @@ main a:hover  {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 401px) and (max-width: 600px) {
     #feuille {
         width: 95%;
         display: flex;
         flex-direction: column;
     }
     #photo {
-        width: 100px;   
-        height: 100px;
+        width: 90px;   
+        height: 90px;
+        float: right;
+    }  
+    #aside {
+        width: initial
+    }
+    #nom-mobile{
+        display: inherit;
+        font-size: 2em;
+    }
+    #job-mobile{
+        display: initial;
+        font-size: 1.2em;
+    }
+    #nom-et-job {
+        display: none;
+    }
+    #age,#permis {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #feuille {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    #photo {
+        width: 50px;   
+        height: 50px;
+        float: right;
     }  
     #aside {
         width: initial
