@@ -39,25 +39,64 @@ section {
     padding: 1em;
 }
 
-#photo {
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipper {
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 100% ;
+    width: 220px;   
+    height: 220px;
+    margin: 1em auto 1.5em auto;
+    margin-bottom: 0.8em;
+  }
+  
+  /* This container is needed to position the photo and back side */
+  .flipper-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flipper:hover .flipper-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the photo and back side */
+  .flipper-photo, .flipper-qrcode {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the photo side (fallback if image is missing) */
+  .flipper-photo {
     background-image: url(../images/laurent.png);
-    background-color: #2F403C;
-    background-repeat: no-repeat;
+    color: black;
     background-position: center;
     background-size: contain;
-    width: 180px;   
-    height: 180px;
+    background-repeat: no-repeat;
+    border-radius: 100% ;
     border: 4px solid gold;
-    border-radius: 100%;
-    margin: 1em auto 1.5em auto;
-}   
-
-
-
-#photo:hover {
-    transition: 1.5s;
-    transform: rotateX(360deg);
-}
+    background-color: #2F403C;
+  }
+  
+  /* Style the back side */
+  .flipper-qrcode {
+    background-image: url(../images/qrcode.jpg);
+    background-color: #2F403C;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+    border-radius: 100% ;
+    border: 4px solid gold;
+  }
 
 
 #aside h2 {
@@ -144,19 +183,40 @@ main h2 {
 #formation-oclock{
     font-weight: bold;
     text-transform: uppercase;
+} 
+
+main a {
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
 }
 
 main a:hover  {
     color: gold;
+    text-decoration: none;
+}
+
+main a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 1px ;
+    left: 0;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+  
+  main a:hover:after {
+    transform: scaleX(1.05);
+    transform-origin: bottom left;
 }
 
 
 #programme-formation-oclock {
     font-size: 0.9em;
-}
-
-#lien-oclock {
-    text-decoration: underline;
 }
 
 #criom,#dermeo,#iee,#lea {
@@ -170,31 +230,8 @@ main a:hover  {
 #esprit .periode {
     padding-bottom: 0.3em;
 }
-
-#lien-letterboxd,#lien-trustpilot {
-    display: inline-block;
-    position: relative;
-    font-style: italic;
-
-  }
   
-  #lien-letterboxd:after,#lien-trustpilot:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: gold;
-    transform-origin: bottom right;
-    transition: transform 0.30s ease-out;
-  }
-  
-  #lien-letterboxd:hover:after,#lien-trustpilot:hover:after {
-    transform: scaleX(1.05);
-    transform-origin: bottom left;
-  }
+
 
 
 /*Version papier manuscrit*/
@@ -238,9 +275,9 @@ main a:hover  {
     #feuille {
         width: 90%;
     }
-    #photo {
-        width: 150px;   
-        height: 150px;
+    .flipper {
+        width: 180px;   
+        height: 180px;
     }  
     #aside {
         width: 65%;
@@ -251,9 +288,9 @@ main a:hover  {
     #feuille {
         width: 97%;
     }
-    #photo {
-        width: 120px;   
-        height: 120px;
+    .flipper {
+        width: 165px;   
+        height: 165px;
     }  
     #aside {
         width: 100%;
@@ -267,9 +304,9 @@ main a:hover  {
         display: flex;
         flex-direction: column;
     }
-    #photo {
-        width: 90px;   
-        height: 90px;
+    .flipper {
+        width: 110px;   
+        height: 110px;
         float: right;
     }  
     #aside {
@@ -297,9 +334,9 @@ main a:hover  {
         display: flex;
         flex-direction: column;
     }
-    #photo {
-        width: 50px;   
-        height: 50px;
+    .flipper {
+        width: 75px;   
+        height: 75px;
         float: right;
     }  
     #aside {
