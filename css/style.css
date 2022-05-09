@@ -168,6 +168,29 @@ main a:hover  {
     padding-bottom: 0.3em;
 }
 
+#lien-letterboxd {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  #lien-letterboxd:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #lien-letterboxd:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 /*Version papier manuscrit*/
 /*body {
     background-image: url(../images/background-bois.avif);
