@@ -71,6 +71,10 @@ section {
     color: rgb(212, 181, 2);
 }
 
+.github {
+    padding-top: 0.5em;
+}
+
 #aside section {
     padding: 0.9em;
 }
@@ -168,29 +172,32 @@ main a:hover  {
     padding-bottom: 0.3em;
 }
 
-#lien-letterboxd {
+#lien-letterboxd,#lien-trustpilot {
     display: inline-block;
     position: relative;
+    font-style: italic;
 
   }
   
-  #lien-letterboxd:after {
+  #lien-letterboxd:after,#lien-trustpilot:after {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: gold;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.30s ease-out;
   }
   
-  #lien-letterboxd:hover:after {
-    transform: scaleX(1);
+  #lien-letterboxd:hover:after,#lien-trustpilot:hover:after {
+    transform: scaleX(1.05);
     transform-origin: bottom left;
   }
+
+
 /*Version papier manuscrit*/
 /*body {
     background-image: url(../images/background-bois.avif);
