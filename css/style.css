@@ -1,5 +1,6 @@
-
-/** Page complète */
+/**===========================================*/
+/**                Site entier                */
+/**===========================================*/
 
 body {
     background-image: url(../images/bureau5.avif) ;
@@ -7,7 +8,71 @@ body {
     text-align: center;
 }
 
-/** CV */
+/**===========================================*/
+/**       Photo de profil effet flipper       */
+/**===========================================*/
+
+/*Positionnement et taille de l'élément flipper*/
+.flipper {
+    background-color: transparent;
+    border-radius: 100% ;
+    width: 220px;   
+    height: 220px;
+    margin: 1em auto 1.5em auto;
+    margin-bottom: 0.8em;
+  }
+
+  /* positionnement de la partie inner de la photo et du QR Code */
+  .flipper-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* flip horizontal quand hover */
+  .flipper:hover .flipper-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position de la photo et du QR Code */
+  .flipper-photo, .flipper-qrcode {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Photo */
+  .flipper-photo {
+    background-image: url(../images/laurent.png);
+    color: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100% ;
+    border: 4px solid gold;
+    background-color: #2F403C;
+  }
+  
+  /* QR Code */
+  .flipper-qrcode {
+    background-image: url(../images/qrcode.jpg);
+    background-color: #2F403C;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+    border-radius: 100% ;
+    border: 4px solid gold;
+  }
+
+/**===========================================*/
+/**                 CV entier                 */
+/**===========================================*/
 
 #feuille {
     background-color: #2F403C;
@@ -29,7 +94,9 @@ section {
     padding: 1em;
 }
 
-/** Partie de gauche du CV */
+/**===========================================*/
+/**           Partie de gauche du CV          */
+/**===========================================*/
 
 #aside {
     background-color: white;
@@ -39,70 +106,18 @@ section {
     padding: 1em;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flipper {
-    background-color: transparent;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    border-radius: 100% ;
-    width: 220px;   
-    height: 220px;
-    margin: 1em auto 1.5em auto;
-    margin-bottom: 0.8em;
-  }
-  
-  /* This container is needed to position the photo and back side */
-  .flipper-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flipper:hover .flipper-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the photo and back side */
-  .flipper-photo, .flipper-qrcode {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the photo side (fallback if image is missing) */
-  .flipper-photo {
-    background-image: url(../images/laurent.png);
-    color: black;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 100% ;
-    border: 4px solid gold;
-    background-color: #2F403C;
-  }
-  
-  /* Style the back side */
-  .flipper-qrcode {
-    background-image: url(../images/qrcode.jpg);
-    background-color: #2F403C;
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    transform: rotateY(180deg);
-    border-radius: 100% ;
-    border: 4px solid gold;
-  }
-
+#age {
+    font-size: 1.2em;
+}
 
 #aside h2 {
     font-weight: bold;
     font-size: 1.2em;
     padding-bottom: 0.5em;
+}
+
+#aside section {
+    padding: 0.9em;
 }
 
 #aside .lien-reseaux-sociaux:hover  {
@@ -111,10 +126,6 @@ section {
 
 .github {
     padding-top: 0.5em;
-}
-
-#aside section {
-    padding: 0.9em;
 }
 
 #nom-mobile {
@@ -131,16 +142,19 @@ section {
     font-weight: bold;
 }
 
-#age {
-    font-size: 1.2em;
-}
-
-
-/** Partie de droite du CV */
+/**===========================================*/
+/**           Partie de droite du CV          */
+/**===========================================*/
 
 #droite-du-cv {
     color: white;
     padding: 1.5em;
+}
+
+#nom-et-job {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid gold;
 }
 
 #nom {
@@ -156,13 +170,7 @@ section {
     padding-bottom: 0.5em;
 }
 
-#nom-et-job {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    border-bottom: 1px solid gold;
-}
-
-main h2 {
+#droite-du-cv h2 {
     color: gold;
     font-size: 1.2em;
     font-weight: bold;
@@ -174,49 +182,19 @@ main h2 {
     padding-top: 2em;
 }
 
-.parcours {
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 0.3em;
-}
-
 #formation-oclock{
     font-weight: bold;
     text-transform: uppercase;
 } 
 
-main a {
-    text-decoration: underline;
-    display: inline-block;
-    position: relative;
-}
-
-main a:hover  {
-    color: gold;
-    text-decoration: none;
-}
-
-main a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 1px ;
-    left: 0;
-    background-color: gold;
-    transform-origin: bottom right;
-    transition: transform 0.30s ease-out;
-}
-  
-  main a:hover:after {
-    transform: scaleX(1.05);
-    transform-origin: bottom left;
-}
-
-
 #programme-formation-oclock {
     font-size: 0.9em;
+}
+
+.parcours {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 0.3em;
 }
 
 #criom,#dermeo,#iee,#lea {
@@ -230,29 +208,54 @@ main a:after {
 #esprit .periode {
     padding-bottom: 0.3em;
 }
-  
 
+/**===========================================*/
+/**   Animation liens partie de droite du CV  */
+/**===========================================*/
 
-
-/*Version papier manuscrit*/
-/*body {
-    background-image: url(../images/background-bois.avif);
-    color: black;
+#droite-du-cv a {
+    text-decoration: underline;
+    display: inline-block;
+    position: relative;
 }
 
-#feuille {
-    background-image: url(../images/background-papier.avif);
-    box-shadow: 0px 0px 40px 6px black;
-}*/
+#droite-du-cv a:hover  {
+    color: gold;
+    text-decoration: none;
+}
 
-/** Media Queries */
+#droite-du-cv a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 1px ;
+    left: 0;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+  
+#droite-du-cv a:hover:after {
+    transform: scaleX(1.05);
+    transform-origin: bottom left;
+}
 
+
+
+/**===========================================*/
+/**               Media Queries               */
+/**===========================================*/
+
+/* width 1400 --> 1500*/
 @media screen and (min-width: 1400px) and (max-width: 1500px) {
     #feuille {
         width: 75%;
     }
 }
 
+/* width 1330 --> 1399*/
 @media screen and (min-width: 1330px) and (max-width: 1399px) {
     #feuille {
         width: 75%;
@@ -262,6 +265,7 @@ main a:after {
     }
 }
 
+/* width 1101 --> 1329*/
 @media screen and (min-width: 1101px) and (max-width: 1329px) {
     #feuille {
         width: 80%;
@@ -271,6 +275,7 @@ main a:after {
     }
 }
 
+/* width 901 --> 1100*/
 @media screen and (min-width: 901px) and (max-width: 1100px) {
     #feuille {
         width: 90%;
@@ -284,6 +289,7 @@ main a:after {
     }
 }
 
+/* width 601 --> 900*/
 @media screen and (min-width: 601px) and (max-width: 900px) {
     #feuille {
         width: 97%;
@@ -295,9 +301,9 @@ main a:after {
     #aside {
         width: 100%;
     }
-
 }
 
+/* width 401 --> 600*/
 @media screen and (min-width: 401px) and (max-width: 600px) {
     #feuille {
         width: 95%;
@@ -328,6 +334,7 @@ main a:after {
     }
 }
 
+/* width 0 --> 400*/
 @media screen and (max-width: 400px) {
     #feuille {
         width: 95%;
@@ -357,3 +364,20 @@ main a:after {
         font-size: 1em;
     }
 }
+
+
+
+
+
+
+
+/*Version papier manuscrit*/
+/*body {
+    background-image: url(../images/background-bois.avif);
+    color: black;
+}
+
+#feuille {
+    background-image: url(../images/background-papier.avif);
+    box-shadow: 0px 0px 40px 6px black;
+}*/

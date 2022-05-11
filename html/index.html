@@ -7,40 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../images/favicon.png">
-    <script src="https://kit.fontawesome.com/0687e8d42b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/favicon.png"> 
+    <script src="https://kit.fontawesome.com/0687e8d42b.js" crossorigin="anonymous"></script> <!--* import icônes -->
     <title>Laurent Arcos</title>
 </head>
 
-<body> <!--* Background / image de bureau -->
-
-    <div id="feuille">  <!--* Feuille du CV -->
+<body> <!--* Background derrière CV -->
         
-        <header></header><!--! Mettre ici le bouton pour changer de thème -->
-       
+    <header> <!--* Bouton pour changer de thème -->
+        <button id="button">Changement de thème</button>
+    </header>
+    
+    <main id="feuille"> <!--* CV Feuille entière-->
+
         <aside id="aside"> <!--* partie de gauche du CV -->
-            <section class="flipper"><!-- Photo de Profil -->
+            
+            <section class="flipper"> <!-- Photo de Profil -->
                 <div class="flipper-inner">
                   <div class="flipper-photo"></div>
                   <div class="flipper-qrcode"></div>
                 </div>
             </section>            
-            <section id="infos">
-                    <ul>       
-                        <li id="nom-mobile">Laurent ARCOS</li><br>
-                        <li id="job-mobile">Développeur Web</li>
-                        <li id="age">36 ans</li>
-                        <li id="permis">Permis B</li>
-                    </ul>
+            
+            <section id="infos"> <!-- Infos âge et permis + Nom et job pour Mobiles -->
+                <ul>       
+                    <li id="nom-mobile">Laurent ARCOS</li><br>
+                    <li id="job-mobile">Développeur Web</li>
+                    <li id="age">36 ans</li>
+                    <li id="permis">Permis B</li>
+                </ul>
             </section> 
            
-            <section id="contacts">
-                <h2>Me contacter</h2><!-- coordonnées -->
+            <section id="contacts"> <!-- coordonnées & réseaux sociaux -->
+                <h2>Me contacter</h2>
                     <ul>       
                         <li><i class="fa-solid fa-phone"></i> 0630205558</li>
                         <li id="email"><i class="fa-solid fa-at"></i> laurent.arcos@gmail.com</li>
-                        <li><i class="fa-solid fa-envelope"></i> 92bis avenue de la République
-                            <br>94700 Maisons-Alfort</li>
+                        <li><i class="fa-solid fa-envelope"></i> 92bis avenue de la République<br>94700 Maisons-Alfort</li>
                         <li class="lien-reseaux-sociaux github"><i class="fa-brands fa-github-square"></i><a href="https://github.com/LaurentArcos" target="_blank"> GitHub</a></li>
                         <li class="lien-reseaux-sociaux"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/laurentarcos/" target="_blank"> Linkedin</a></li>
                         <li class="lien-reseaux-sociaux"><i class="fa-brands fa-twitter-square"></i><a href="https://twitter.com/LaurentADev" target="_blank"> Twitter</a></li>
@@ -77,15 +80,17 @@
                         <li>Rigueur et Force de proposition</li>        
                     </ul>
             </section>
+
         </aside>
 
-        <main id="droite-du-cv"> <!--* partie de droite du CV -->
+
+        <div id="droite-du-cv"> <!--* partie de droite du CV -->
+
             <section id="nom-et-job"> <!-- Nom et infos -->
-            <h1 id="nom">Laurent Arcos</h1> <!-- Nom / Plus gros titre -->
-                <ul id="job">
-                    <li>Développeur Web</li>
-                </ul>
+                <h1 id="nom">Laurent Arcos</h1> <!-- Nom / Plus gros titre -->
+                <p id="job">Développeur Web</p>
             </section>
+
             <section id="projet"> <!-- Mon projet -->
                 <h2>Mon Projet de reconversion</h2> 
                     <p>Décider de changer de métier à 35 ans, pour certains c'est une preuve de courage, pour d'autre un signe de folie.</p>
@@ -93,14 +98,16 @@
                     <p>J'ai longtemps regardé le métier de développeur web avec envie mais sans imaginer une possible reconversion.</p>
                     <p>Aujourd'hui, après plus d'un an de préparation, dont 6 mois de formation intensive chez <a id="lien-trustpilot" href="https://fr.trustpilot.com/review/oclock.io">O'Clock</a>, je me sens plus prêt que jamais pour cette nouvelle aventure.</p>
             </section>  
+
             <section id="oclock"> <!-- O'clock -->
                 <h2>Formation chez O'clock</h2> 
                     <h3 id="formation-oclock">Formation Développeur Web</h3>
                     <p class="periode">mars à septembre 2022 - Promotion De Vinci</p>
                     <p id="programme-formation-oclock">Consultez <a id="lien-oclock" href="https://oclock.io/formations/developpeur-web" target="_blank">ici</a> le programme de la formation "Développeur Web"</p>
             </section>
+
             <section id="parcours-professionnel"> <!-- Expériences professionnelles -->
-                <h2 id="avant-oclock"> Mon parcours</h2>  <!-- Avant -->
+                <h2 id="avant-oclock"> Mon parcours</h2>
                     <article id="esprit"> <!-- Esprit-->
                         <h3 class="parcours">Esprit</h3>
                         <p class="poste">Commercial Prêt-à-Porter auprès des revendeurs multimarques</p>
@@ -143,9 +150,12 @@
                         <li>Voyages (Afrique du Sud, Canada, Cambodge, Tanzanie, Vietnam)</li>
                     </ul>   
             </section>
-        </main>
 
-    </div>
+        </div>
+
+    </main>
+
+<script src="../javascript/script.js"></script> <!--* Scripts Javascript -->
 
 </body>
 
