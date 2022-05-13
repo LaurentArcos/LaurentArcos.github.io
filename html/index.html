@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <!--*<link id="style1" rel="stylesheet" type="text/css" href="../css/professional-style.css" />-->
+    <link id="manuscrit" rel="stylesheet" href="../css/manuscript-style.css">
     <link rel="icon" href="../images/favicon.png"> 
     <script src="https://kit.fontawesome.com/0687e8d42b.js" crossorigin="anonymous"></script> <!--* import icônes -->
     <title>Laurent Arcos</title>
@@ -15,14 +16,14 @@
 <body> <!--* Background derrière CV -->
         
     <header> <!--* Bouton pour changer de thème -->
-        <button id="button">Changement de thème</button>
+        <button type="button" onclick="toggle()">Switch</button>
     </header>
     
     <main id="feuille"> <!--* CV Feuille entière-->
 
         <aside id="aside"> <!--* partie de gauche du CV -->
             
-            <section class="flipper"> <!-- Photo de Profil -->
+            <section class="flipper photo"> <!-- Photo de Profil -->
                 <div class="flipper-inner">
                   <div class="flipper-photo"></div>
                   <div class="flipper-qrcode"></div>
@@ -56,6 +57,7 @@
                         <li>HTML, CSS, Javascript, React</li>
                         <li>PHP, MySQL, Adminer, phpMyAdmin</li>
                         <li>VS Code, GitHub, Bootstrap</li>
+                        <li>Pair Programming</li>
                         <li>Notion, Trello, Slack, Discord, Start.me</li>
                         <li>Windows, MacOS, Linux(Ubuntu)</li>
                         <li>Pack Office Microsoft</li>
@@ -75,8 +77,9 @@
                 <h2>Soft Skills</h2>
                     <ul>
                         <li>Profil polyvalent</li>  
-                        <li>Curiosité, adaptabilité et réactivité</li>  
-                        <li>Capacité à travailler en équipe et en autonomie </li>
+                        <li>Curiosité, empathie et ouverture d'esprit</li>
+                        <li>Patience, adaptabilité, réactivité et persévérance</li>   
+                        <li>Capacité à communiquer, travailler en équipe et en autonomie</li>
                         <li>Compétences organisationnelles, gestion du stress et des deadlines</li>  
                         <li>Rigueur et Force de proposition</li>        
                     </ul>
@@ -156,7 +159,7 @@
 
     </main>
 
-<script src="../javascript/script.js"></script> <!--* Scripts Javascript -->
+<script src="../javascript/theme.js"></script> <!--* Scripts Javascript -->
 
 </body>
 
