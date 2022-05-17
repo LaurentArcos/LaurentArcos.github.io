@@ -1,18 +1,30 @@
 body {
     background-image: url(../images/background-bois.jpg) ;
-    background-size: cover ;
     text-align: center;
     color: black;
 }
 
 main {
-    background-image: url(../images/background-papier.jpg);
-    background-size: cover ;
-    text-align: center; 
+    background-image: url(../images/background-papier.jpg); 
+    background-size: cover;
     width: 55%;
-    box-shadow: 0px 0px 40px 6px black;
-    width: 55%;
-    margin: 3em auto;
+    box-shadow: 0px 0px 20px 6px black;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Patrick Hand';
+    font-size: 1.2em;   
+}
+
+a {
+    color: inherit;
+}
+
+h2,.version-manuscrite {
+    font-family: 'Special Elite';
+    font-size: 1.3rem;
+  
 }
 
 .photo {
@@ -21,8 +33,36 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 150px;   
-    height: 150px;
-    margin: 1em auto 0em auto;
+    width: 160px;   
+    height: 210px;
+    border: 2px solid black;
+    margin: 2rem;
+    padding: 1rem 0.5rem;
+    float: right;
 }
 
+section {
+    padding: 2rem;
+}
+
+.contact-avec-icones {
+    display: none;
+}
+
+.version-pro {
+    display: none;
+}
+
+#nom-et-job {
+    display: none;
+}
+
+#competences {
+    display: flex;
+    flex-direction: row;
+}
+
+#parcours-professionnel {
+    display: flex;
+    flex-direction: row;
+}

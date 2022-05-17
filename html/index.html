@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/reset.css">
-    <!--*<link id="style1" rel="stylesheet" type="text/css" href="../css/professional-style.css" />-->
-    <link id="manuscrit" rel="stylesheet" href="../css/manuscript-style.css">
+    <link id="theme-toggler" rel="stylesheet" type="text/css" href="../css/professional-style.css" />
+    <!--*<link id="manuscrit" rel="stylesheet" href="../css/manuscript-style.css">-->
     <link rel="icon" href="../images/favicon.png"> 
     <script src="https://kit.fontawesome.com/0687e8d42b.js" crossorigin="anonymous"></script> <!--* import icônes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Special+Elite&display=swap" rel="stylesheet">
     <title>Laurent Arcos</title>
 </head>
 
 <body> <!--* Background derrière CV -->
         
     <header> <!--* Bouton pour changer de thème -->
-        <button type="button" onclick="toggle()">Switch</button>
+        <button id="button">Switch</button>
     </header>
     
     <main id="feuille"> <!--* CV Feuille entière-->
@@ -32,25 +35,37 @@
             
             <section id="infos"> <!-- Infos âge et permis + Nom et job pour Mobiles -->
                 <ul>       
-                    <li id="nom-mobile">Laurent ARCOS</li><br>
-                    <li id="job-mobile">Développeur Web</li>
-                    <li id="age">36 ans</li>
-                    <li id="permis">Permis B</li>
+                    <li id="nom-mobile"><span class="version-manuscrite">Nom : </span>Laurent ARCOS</li><br>
+                    <li id="job-mobile"><span class="version-manuscrite">Profession : </span>Développeur Web</li>
+                    <li id="age"><span class="version-manuscrite">Age: </span>36 ans</li>
+                    <li id="permis"><span class="version-pro">Permis B</span></li>
                 </ul>
             </section> 
            
-            <section id="contacts"> <!-- coordonnées & réseaux sociaux -->
+            <section class="contact-avec-texte"> <!-- coordonnées & réseaux sociaux avec texte display sur CV manuscrit -->
                 <h2>Me contacter</h2>
-                    <ul>       
-                        <li><i class="fa-solid fa-phone"></i> 0630205558</li>
-                        <li id="email"><i class="fa-solid fa-at"></i> laurent.arcos@gmail.com</li>
-                        <li><i class="fa-solid fa-envelope"></i> 92bis avenue de la République<br>94700 Maisons-Alfort</li>
-                        <li class="lien-reseaux-sociaux github"><i class="fa-brands fa-github-square"></i><a href="https://github.com/LaurentArcos" target="_blank"> GitHub</a></li>
-                        <li class="lien-reseaux-sociaux"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/laurentarcos/" target="_blank"> Linkedin</a></li>
-                        <li class="lien-reseaux-sociaux"><i class="fa-brands fa-twitter-square"></i><a href="https://twitter.com/LaurentADev" target="_blank"> Twitter</a></li>
+                    <ul>
+                        <li><span class="version-manuscrite">Téléphone :</span> 0630205558</li>
+                        <li class="email"><span class="version-manuscrite">E-mail :</span> laurent.arcos@gmail.com</li>
+                        <li><span class="version-manuscrite">Adresse :</span> 92bis avenue de la République 94700 Maisons-Alfort</li>
+                        <li><span class="version-manuscrite">Mes réseaux : </span><a href="https://github.com/LaurentArcos" target="_blank">GitHub</a> / 
+                        <a href="https://www.linkedin.com/in/laurentarcos/" target="_blank">Linkedin</a> / 
+                        <a href="https://twitter.com/LaurentADev" target="_blank">Twitter</a></li>
                     </ul>
             </section>    
-            
+
+            <section class="contact-avec-icones"> <!-- coordonnées & réseaux sociaux avec icônes display sur CV pro-->
+                <h2>Me contacter</h2>
+                    <ul>       
+                        <li><i class="icones fa-solid fa-phone"></i> 0630205558</li>
+                        <li class="email"><i class="icones fa-solid fa-at"></i> laurent.arcos@gmail.com</li>
+                        <li><i class="icones fa-solid fa-envelope"></i> 92bis avenue de la République<br>94700 Maisons-Alfort</li>
+                        <li class="lien-reseaux-sociaux github"><i class="icones fa-brands fa-github-square"></i><a href="https://github.com/LaurentArcos" target="_blank"> GitHub</a></li>
+                        <li class="lien-reseaux-sociaux"><i class="icones fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/laurentarcos/" target="_blank"> Linkedin</a></li>
+                        <li class="lien-reseaux-sociaux"><i class="icones fa-brands fa-twitter-square"></i><a href="https://twitter.com/LaurentADev" target="_blank"> Twitter</a></li>
+                    </ul>
+            </section>  
+        <div id="competences">
             <section id="competences-dev"> <!-- compétences de web développeur -->
                 <h2>Compétences en Développement Web et Informatique</h2>
                     <ul>
@@ -73,7 +88,7 @@
                     </ul>
             </section>
             
-            <section id="Soft skills"> <!-- Soft skills -->
+            <section id="soft-skills"> <!-- Soft skills -->
                 <h2>Soft Skills</h2>
                     <ul>
                         <li>Profil polyvalent</li>  
@@ -84,8 +99,8 @@
                         <li>Rigueur et Force de proposition</li>        
                     </ul>
             </section>
-
-        </aside>
+        </div>
+       </aside>
 
 
         <div id="droite-du-cv"> <!--* partie de droite du CV -->
@@ -105,15 +120,17 @@
 
             <section id="oclock"> <!-- O'clock -->
                 <h2>Formation chez O'clock</h2> 
-                    <h3 id="formation-oclock">Formation Développeur Web</h3>
+                    <h4 id="formation-oclock">Formation Développeur Web</h4>
                     <p class="periode">mars à septembre 2022 - Promotion De Vinci</p>
                     <p id="programme-formation-oclock">Consultez <a id="lien-oclock" href="https://oclock.io/formations/developpeur-web" target="_blank">ici</a> le programme de la formation "Développeur Web"</p>
             </section>
 
             <section id="parcours-professionnel"> <!-- Expériences professionnelles -->
+               <div>              
                 <h2 id="avant-oclock"> Mon parcours</h2>
+                    <h3 class="parcours-titre">Expériences professionnelles</h3>
                     <article id="esprit"> <!-- Esprit-->
-                        <h3 class="parcours">Esprit</h3>
+                        <h4 class="parcours">Esprit</h4>
                         <p class="poste">Commercial Prêt-à-Porter auprès des revendeurs multimarques</p>
                         <p class="periode"> juil. 2018 - déc. 2021</p>
                         <p class="poste">Commercial Bodywear auprès des revendeurs franchisés et multimarques</p>
@@ -122,25 +139,29 @@
                         <p class="periode">juin 2012 - avr. 2017</p>
                     </article>
                     <article id="dermeo"> <!-- Dermeo -->
-                        <h3 class="parcours">Dermeo</h3>
+                        <h4 class="parcours">Dermeo</h4>
                         <p class="poste">Office Manager - Chargé d'opération et de gestion</p>
                         <p class="periode">févr. 2011 - mai 2012 ·</p>
                     </article>
                     <article id="criom"> <!-- CRIOM -->
-                        <h3 class="parcours">criom</h3>
+                        <h4 class="parcours">criom</h4>
                         <p class="poste">Assistant commercial export</p>
                         <p class="periode">mars 2008 - janv. 2011·</p>
                     </article>
+               </div>
+               <div>
+                <h3 class="parcours-titre">Etudes universitaires</h3>
                     <article id="iee"> <!-- IEE Paris 8 -->
-                        <h3 class="parcours">IEE Paris 8</h3>
+                        <h4 class="parcours">IEE Paris 8</h4>
                         <p>Licence Professionnelle Commerce International : Adjoint de Responsable Export</p>
                         <p class="periode">2008</p>
                     </article>
                     <article id="lea"> <!-- LEA Toulon-->
-                        <h3 class="parcours">Université de Sud Toulon-Var</h3>
+                        <h4 class="parcours">Université de Sud Toulon-Var</h4>
                         <p>Licence Langues Etrangères Appliquées (anglais et espagnol) </p>
                         <p class="periode">2006</p>
                     </article>
+               </div>
             </section>
             
             <section id="centres-dinterets"> <!-- Centres d'intérêts -->

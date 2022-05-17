@@ -24,7 +24,7 @@ body {
     border-radius: 100% ;
     width: 220px;   
     height: 220px;
-    margin: 1em auto 0em auto;
+    margin: 1rem auto 0rem auto;
   }
 
   /* positionnement de la partie inner de la photo et du QR Code */
@@ -83,7 +83,7 @@ body {
 #feuille {
     background-color: #2F403C;
     width: 55%;
-    margin: 3em auto;
+    margin: 3rem auto;
     box-shadow: 0px 0px 50px 2px black;
     display: flex;
     flex-direction: row;
@@ -107,8 +107,12 @@ a {
     text-decoration: inherit;
 }
 
+.version-manuscrite {
+    display: none;
+}
+
 section {
-    padding: 1em;
+    padding: 1rem;
 }
 
 /**===========================================*/
@@ -120,21 +124,25 @@ section {
     height: inherit;
     width: 45%;
     color: #2F403C;
-    padding: 1em;
+    padding: 1rem;
 }
 
 #age {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #aside h2 {
     font-weight: bold;
-    font-size: 1.2em;
-    padding-bottom: 0.5em;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
 }
 
 #aside section {
-    padding: 0.9em;
+    padding: 0.9rem;
+}
+
+.contact-avec-texte {
+    display: none;
 }
 
 #aside .lien-reseaux-sociaux:hover  {
@@ -142,19 +150,19 @@ section {
 }
 
 .github {
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
 }
 
 #nom-mobile {
     display: none;
-    size: 3em;
+    size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #job-mobile {
     display: none;
-    size: 2em;
+    size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -165,38 +173,38 @@ section {
 
 #droite-du-cv {
     color: white;
-    padding: 1.5em;
+    padding: 1.5rem;
 }
 
 #nom-et-job {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     border-bottom: 1px solid gold;
 }
 
 #nom {
     color: gold;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.2rem;
 }
 
 #job {
-    font-size: 1.6em;
-    padding-bottom: 0.5em;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
 }
 
 #droite-du-cv h2 {
     color: gold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 #projet {
-    padding-top: 2em;
+    padding-top: 2rem;
 }
 
 #formation-oclock{
@@ -205,26 +213,32 @@ section {
 } 
 
 #programme-formation-oclock {
-    font-size: 0.9em;
-}
-
-.parcours {
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 0.3em;
-}
-
-#criom,#dermeo,#iee,#lea {
-    padding-top: 1em;
+    font-size: 0.9rem;
 }
 
 .periode {
     font-style: italic;
 }
 
-#esprit .periode {
-    padding-bottom: 0.3em;
+.parcours-titre {
+    color: gold;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}  
+
+.parcours {
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
+#esprit,#dermeo,#criom,#iee {
+    padding-bottom: 0.5rem;
+}
+
+#criom {
+    padding-bottom: 1rem;
+}
+
 
 /**===========================================*/
 /**   Animation liens partie de droite du CV  */
