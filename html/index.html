@@ -6,26 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/switch-button-style.css">
     <link id="theme-toggler" rel="stylesheet" type="text/css" href="../css/professional-style.css" />
     <!--*<link id="manuscrit" rel="stylesheet" href="../css/manuscript-style.css">-->
     <link rel="icon" href="../images/favicon.png"> 
     <script src="https://kit.fontawesome.com/0687e8d42b.js" crossorigin="anonymous"></script> <!--* import icônes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Playball&family=Special+Elite&display=swap" rel="stylesheet">
     <title>Laurent Arcos</title>
 </head>
 
 <body> <!--* Background derrière CV -->
         
     <header> <!--* Bouton pour changer de thème -->
-        <button id="button">Switch</button>
+        <div class="switch-holder">
+            <div class="switch-label">
+                <span>Mode Manuscrit</span>
+            </div>
+            <div id="button" class="switch-toggle">
+                <input type="checkbox" id="changement-theme">
+                <label id="button2" for="changement-theme"></label>
+            </div>
+        </div>
     </header>
     
     <main id="feuille"> <!--* CV Feuille entière-->
 
         <aside id="aside"> <!--* partie de gauche du CV -->
-            
+
             <section class="flipper photo"> <!-- Photo de Profil -->
                 <div class="flipper-inner">
                   <div class="flipper-photo"></div>
@@ -84,6 +93,7 @@
                 <h2>Compétences complémentaires</h2>
                     <ul>
                         <li>langues parlées: anglais (courant) et espagnol (bon niveau)</li>
+                        <li>Méthodes Agile Scrum</li>
                         <li>Maîtrise des techniques commerciales</li>
                     </ul>
             </section>
@@ -180,7 +190,7 @@
 
     </main>
 
-<script src="../javascript/theme.js"></script> <!--* Scripts Javascript -->
+<script src="../javascript/themeSwitcher.js"></script> <!--* Scripts Javascript -->
 
 </body>
 
