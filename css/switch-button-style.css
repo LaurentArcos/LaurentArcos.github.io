@@ -75,3 +75,98 @@
   box-shadow: -3px -3px 5px black,
         3px 3px 5px black;
 }
+
+/**===========================================*/
+/**               Media Queries               */
+/**===========================================*/
+
+/* width 1400 --> 1500*/
+@media screen and (min-width: 2401px) and (max-width: 2600px) {
+  .switch-holder {
+    width: 10%;
+  }
+}
+
+/* width 1400 --> 1500*/
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+  .switch-holder {
+    width: 20%;
+  }
+}
+
+/* width 1330 --> 1399*/
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+  .switch-holder {
+    width: 20%;
+  }
+}
+
+/* width 1101 --> 1329*/
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .switch-holder {
+    width: 23%;
+  }
+}
+
+/* width 1101 --> 1329*/
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+  .switch-holder {
+    width: 25%;
+  }
+}
+
+/* width 1101 --> 1329*/
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
+  .switch-holder {
+    width: 25%;
+  }
+}
+
+/* width 901 --> 1100*/
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .switch-holder {
+    width: 30%;
+  }
+}
+
+/* width 901 --> 1100*/
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  .switch-holder {
+    width: 35%;
+  }
+}
+
+/* width 601 --> 900*/
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .switch-holder {
+    width: 35%;
+  }
+}
+
+/* width 601 --> 900*/
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  .switch-holder {
+    width: 50%;
+  }
+}
+
+/* width 401 --> 600*/
+@media screen and (min-width: 501px) and (max-width: 600px) {
+  .switch-holder {
+    width: 55%;
+  }
+}
+
+/* width 401 --> 600*/
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .switch-holder {
+    width: 60%;
+  }
+}
+
+/* width 0 --> 400*/
+@media screen and (max-width: 400px) {
+  .switch-holder {
+    width: 80%;
+  }
+}

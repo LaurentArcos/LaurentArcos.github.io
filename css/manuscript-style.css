@@ -69,6 +69,44 @@ section {
 
 
 
+/**===========================================*/
+/**               Media Queries               */
+/**===========================================*/
+
+/* width 1400 --> 1500*/
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    
+}
+
+/* width 1330 --> 1399*/
+@media screen and (min-width: 1330px) and (max-width: 1399px) {
+
+}
+
+/* width 1101 --> 1329*/
+@media screen and (min-width: 1101px) and (max-width: 1329px) {
+
+}
+
+/* width 901 --> 1100*/
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+
+}
+
+/* width 601 --> 900*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+}
+
+/* width 401 --> 600*/
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+}
+
+/* width 0 --> 400*/
+@media screen and (max-width: 400px) {
+
+}
 
 
 
