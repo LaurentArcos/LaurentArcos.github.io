@@ -8,6 +8,6 @@
 
 -[Linkedin](https://www.linkedin.com/in/laurentarcos) 
 
--[Twitter](https://twitter.com/LaurentArcos) 
+-[Twitter](https://twitter.com/LaurentDEV_inci) 
 
 -[GitHub](https://github.com/LaurentArcos) 
