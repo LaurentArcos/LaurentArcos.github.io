@@ -75,37 +75,119 @@ section {
 
 /* width 1400 --> 1500*/
 @media screen and (min-width: 1400px) and (max-width: 1500px) {
-    
+    #feuille {
+        width: 75%;
+    }
 }
 
 /* width 1330 --> 1399*/
 @media screen and (min-width: 1330px) and (max-width: 1399px) {
-
+    #feuille {
+        width: 75%;
+    }
+    #aside {
+        width: 38%;
+    }
 }
 
 /* width 1101 --> 1329*/
 @media screen and (min-width: 1101px) and (max-width: 1329px) {
-
+    #feuille {
+        width: 80%;
+    }
+    #aside {
+        width: 55%;
+    }
 }
 
 /* width 901 --> 1100*/
 @media screen and (min-width: 901px) and (max-width: 1100px) {
-
+    #feuille {
+        width: 90%;
+    }
+    .flipper {
+        width: 180px;   
+        height: 180px;
+    }  
+    #aside {
+        width: 65%;
+    }
 }
 
 /* width 601 --> 900*/
 @media screen and (min-width: 601px) and (max-width: 900px) {
-
+    #feuille {
+        width: 97%;
+    }
+    .flipper {
+        width: 165px;   
+        height: 165px;
+    }  
+    #aside {
+        width: 100%;
+    }
 }
 
 /* width 401 --> 600*/
 @media screen and (min-width: 401px) and (max-width: 600px) {
-
+    #feuille {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .flipper {
+        width: 110px;   
+        height: 110px;
+        float: right;
+    }  
+    #aside {
+        width: initial
+    }
+    #nom-mobile{
+        display: inherit;
+        font-size: 2em;
+    }
+    #job-mobile{
+        display: initial;
+        font-size: 1.2em;
+    }
+    #nom-et-job {
+        display: none;
+    }
+    #age,#permis {
+        font-size: 1em;
+    }
 }
 
 /* width 0 --> 400*/
 @media screen and (max-width: 400px) {
-
+    #feuille {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .flipper {
+        width: 75px;   
+        height: 75px;
+        float: right;
+    }  
+    #aside {
+        width: initial
+    }
+    #nom-mobile{
+        display: inherit;
+        font-size: 2em;
+    }
+    #job-mobile{
+        display: initial;
+        font-size: 1.2em;
+    }
+    #nom-et-job {
+        display: none;
+    }
+    #age,#permis {
+        font-size: 1em;
+    }
 }
 
 

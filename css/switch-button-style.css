@@ -80,7 +80,7 @@
 /**               Media Queries               */
 /**===========================================*/
 
-/* width 1400 --> 1500*/
+/* width 2401 --> 2600*/
 @media screen and (min-width: 2401px) and (max-width: 2600px) {
   .switch-holder {
     width: 10%;
@@ -94,70 +94,70 @@
   }
 }
 
-/* width 1330 --> 1399*/
+/* width 1301 --> 1400*/
 @media screen and (min-width: 1301px) and (max-width: 1400px) {
   .switch-holder {
     width: 20%;
   }
 }
 
-/* width 1101 --> 1329*/
+/* width 1201 --> 1300*/
 @media screen and (min-width: 1201px) and (max-width: 1300px) {
   .switch-holder {
     width: 23%;
   }
 }
 
-/* width 1101 --> 1329*/
+/* width 1101 --> 1200*/
 @media screen and (min-width: 1101px) and (max-width: 1200px) {
   .switch-holder {
     width: 25%;
   }
 }
 
-/* width 1101 --> 1329*/
+/* width 1001 --> 1100*/
 @media screen and (min-width: 1001px) and (max-width: 1100px) {
   .switch-holder {
     width: 25%;
   }
 }
 
-/* width 901 --> 1100*/
+/* width 901 --> 1000*/
 @media screen and (min-width: 901px) and (max-width: 1000px) {
   .switch-holder {
     width: 30%;
   }
 }
 
-/* width 901 --> 1100*/
+/* width 801 --> 900*/
 @media screen and (min-width: 801px) and (max-width: 900px) {
   .switch-holder {
     width: 35%;
   }
 }
 
-/* width 601 --> 900*/
+/* width 701 --> 800*/
 @media screen and (min-width: 701px) and (max-width: 800px) {
   .switch-holder {
     width: 35%;
   }
 }
 
-/* width 601 --> 900*/
+/* width 601 --> 700*/
 @media screen and (min-width: 601px) and (max-width: 700px) {
   .switch-holder {
     width: 50%;
   }
 }
 
-/* width 401 --> 600*/
+/* width 501 --> 600*/
 @media screen and (min-width: 501px) and (max-width: 600px) {
   .switch-holder {
     width: 55%;
   }
 }
 
-/* width 401 --> 600*/
+/* width 401 --> 500*/
 @media screen and (min-width: 401px) and (max-width: 500px) {
   .switch-holder {
     width: 60%;
