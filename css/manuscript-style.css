@@ -21,9 +21,23 @@ a {
     color: inherit;
 }
 
+#nom-mobile {
+    font-size: 1.7rem;
+}
+
+#job-mobile {
+    font-size: 1.5rem;
+}
+
+#age {
+    font-size: 1.3rem ;
+}
+
+
 h2,.version-manuscrite {
     font-family: 'Special Elite';
     font-size: 1.3rem;
+    text-transform: uppercase;
   
 }
 
@@ -49,6 +63,11 @@ section {
     display: none;
 }
 
+.contact-avec-texte {
+    border-bottom: 2px solid black;
+    padding-top: 0;
+}
+
 .version-pro {
     display: none;
 }
@@ -62,12 +81,49 @@ section {
     flex-direction: row;
 }
 
-#parcours-professionnel {
-    display: flex;
-    flex-direction: row;
+#competences > section {
+    border-bottom: 2px solid black;
 }
 
+#competences-dev {
+    border-right: 2px solid black;
+}
 
+#competences-complementaires {
+    border-right: 2px solid black;
+}
+
+#projet > p {
+    padding-bottom: 0.5rem;
+    line-height: 1.1rem;
+} 
+
+
+#oclock {
+    border-bottom: 2px solid black;
+    padding-top: 0;
+}
+
+.parcours-titre {
+    display: none;
+}
+
+article {
+    padding-bottom: 1rem;
+}
+
+.parcours {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+#centres-dinterets {
+    border-top: 2px solid black;
+}
+
+h1,h2 {
+    padding-bottom: 1rem;
+}
 
 /**===========================================*/
 /**               Media Queries               */
@@ -85,18 +141,12 @@ section {
     #feuille {
         width: 75%;
     }
-    #aside {
-        width: 38%;
-    }
 }
 
 /* width 1101 --> 1329*/
 @media screen and (min-width: 1101px) and (max-width: 1329px) {
     #feuille {
         width: 80%;
-    }
-    #aside {
-        width: 55%;
     }
 }
 
@@ -109,9 +159,6 @@ section {
         width: 180px;   
         height: 180px;
     }  
-    #aside {
-        width: 65%;
-    }
 }
 
 /* width 601 --> 900*/
@@ -125,6 +172,19 @@ section {
     }  
     #aside {
         width: 100%;
+    }
+
+    #competences {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #competences-dev {
+        border-right: none;
+    }
+    
+    #competences-complementaires {
+        border-right: none;
     }
 }
 
@@ -145,7 +205,7 @@ section {
     }
     #nom-mobile{
         display: inherit;
-        font-size: 2em;
+        font-size: 1.2em;
     }
     #job-mobile{
         display: initial;
@@ -156,6 +216,19 @@ section {
     }
     #age,#permis {
         font-size: 1em;
+    }
+
+    #competences {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #competences-dev {
+        border-right: none;
+    }
+    
+    #competences-complementaires {
+        border-right: none;
     }
 }
 
@@ -176,7 +249,7 @@ section {
     }
     #nom-mobile{
         display: inherit;
-        font-size: 2em;
+        font-size: 1.2em;
     }
     #job-mobile{
         display: initial;
@@ -187,6 +260,19 @@ section {
     }
     #age,#permis {
         font-size: 1em;
+    }
+
+    #competences {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #competences-dev {
+        border-right: none;
+    }
+    
+    #competences-complementaires {
+        border-right: none;
     }
 }
 
