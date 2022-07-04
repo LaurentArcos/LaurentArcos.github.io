@@ -7,7 +7,7 @@ const themeToggle = {
     },
 
     handleBtnClick : function () {
-    //console.log ('okleft');
+    
         let togglerEl = document.getElementById("theme-toggler");
         if (togglerEl.href.match("../css/professional-style.css")) {
             togglerEl.href = "../css/manuscript-style.css";    
@@ -18,7 +18,7 @@ const themeToggle = {
     },
     
     handleAgainBtnClick : function () {
-        //console.log ('okright');
+        
         let togglerEl = document.getElementById("theme-toggler");
         if (togglerEl.href.match("../css/manuscript-style.css")) {
             togglerEl.href = "../css/professional-style.css";    
