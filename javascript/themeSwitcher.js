@@ -6,9 +6,8 @@ const themeToggle = {
         document.querySelector('#button2').addEventListener('click', themeToggle.handleAgainBtnClick);
     },
 
-    handleBtnClick : function (event) {
+    handleBtnClick : function () {
     //console.log ('okleft');
-    //event.preventDefault();
         let togglerEl = document.getElementById("theme-toggler");
         if (togglerEl.href.match("../css/professional-style.css")) {
             togglerEl.href = "../css/manuscript-style.css";    
@@ -18,9 +17,8 @@ const themeToggle = {
         }
     },
     
-    handleAgainBtnClick : function (event) {
+    handleAgainBtnClick : function () {
         //console.log ('okright');
-        //event.preventDefault();
         let togglerEl = document.getElementById("theme-toggler");
         if (togglerEl.href.match("../css/manuscript-style.css")) {
             togglerEl.href = "../css/professional-style.css";    
