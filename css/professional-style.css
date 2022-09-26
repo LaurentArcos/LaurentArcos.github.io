@@ -226,6 +226,11 @@ section {
     padding-bottom: 0.5rem;
 }  
 
+.tribu {
+    color: gold;
+    text-transform: uppercase;
+}  
+
 .parcours {
     text-transform: uppercase;
     font-weight: bold;
