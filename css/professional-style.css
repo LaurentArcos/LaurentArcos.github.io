@@ -144,6 +144,10 @@ section {
     color: rgb(212, 181, 2);
 }
 
+#aside .lien-opquast:hover  {
+    color: rgb(212, 181, 2);
+}
+
 .github {
     padding-top: 0.5rem;
 }
@@ -249,35 +253,22 @@ section {
 /**   Animation liens partie de droite du CV  */
 /**===========================================*/
 
-#droite-du-cv a {
-    text-decoration: underline;
-    display: inline-block;
-    position: relative;
-}
 
-#droite-du-cv a:hover  {
-    color: gold;
+#lien-letterboxd {
     text-decoration: none;
 }
 
-#droite-du-cv a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 1px ;
-    left: 0;
-    background-color: gold;
-    transform-origin: bottom right;
-    transition: transform 0.30s ease-out;
-}
-  
-#droite-du-cv a:hover:after {
-    transform: scaleX(1.05);
-    transform-origin: bottom left;
+#lien-letterboxd:hover {
+    color: rgb(212, 181, 2);
 }
 
+.droite-du-cv-links {
+    text-decoration: underline;
+}
+
+.droite-du-cv-links:hover {
+    color: rgb(212, 181, 2);
+}
 
 
 /**===========================================*/
