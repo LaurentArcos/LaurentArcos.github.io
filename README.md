@@ -1,7 +1,9 @@
 
-# Laurent ARCOS
+# Mon C.V. en ligne
 
-[Consulter mon CV en ligne](https://laurentarcos.github.io/mon-cv/html/)       
+[Lien vers le CV](https://laurentarcos.github.io/mon-cv/html/)   
+
+### CV réalisé en Javascript vanilla
 
 <br>
 
